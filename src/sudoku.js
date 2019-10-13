@@ -84,7 +84,7 @@ export const checkRow = (row, coords) => {
     }
 
     return x;
-  }) 
+  });
 }
 
 /**
@@ -135,17 +135,15 @@ export const solve = (sudoku, dim = 3, nEpochs = 30) => {
 
   const nFound = sudoku.filter(x => typeof x !== 'number').length;
 
-  console.log(`the grid contains ${nFound}/${dim * dim * dim * dim} that are undefined (${(100*nFound/(dim**4)).toFixed(2)}%)`)
+  console.log(`the grid contains ${nFound}/${dim ** 4} cells that are undefined (${(100 * nFound/(dim ** 4)).toFixed(2)}%)`)
 
   // check if something is left to solve, else return array
   if(nFound === 0) {
-    console.log(`algorithm aborted early after ${nEpochs} epochs`);
+    console.log(`algorithm aborted early at epochs ${nEpochs}`);
     return sudoku;
   }
 
   const s = solveIteration(sudoku, dim);
-
-
 
   return solve(s, dim, nEpochs - 1);
 }
