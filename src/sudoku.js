@@ -215,10 +215,10 @@ export const solveWithInit = (sudoku, dim = 3, nIteration = 30) => {
 }
 
 
-export const printSudoku = (s, dim = 3) => Array(dim**2).fill(0).map((_, j) => {
+export const printSudoku = (s, dim = 3, cutoff = 2) => Array(dim**2).fill(0).map((_, j) => {
   return s
     .filter((x, i) => i >= j*9 && i <= (j+1)*9 -1)
-    .map(x => x.length > 2 ? null : x )
-    .reduce((a, b) => `${a}\t${b}`);
+    .map(x => x.length > cutoff ? `(-${x.length}-)` : x )
+    .reduce((a, b) => `${a} \t${b}`);
 })
 .reduce((a, b) => `${a}\n${b}`);

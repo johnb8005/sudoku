@@ -202,9 +202,45 @@ test('list2Possibilities (4)', () => {
   expect(r).toEqual(e);
 });
 
-test('substractArrayFromArray', () => {
+test('list 3 possibilities', () => {
+  const row = [[1, 3, 2], [1, 3, 2], [1, 2], 4, 5];
+  const coords = [0, 1, 2, 3, 4];
 
-  
+  const r = list3Possibilities(row, coords);
+  const e   = [ [ 1, 3, 2 ] ];
+
+  expect(r).toEqual(e);
+});
+
+test('list 3 possibilities (2)', () => {
+  const row = [[1, 3, 2], [1, 3, 2], [1, 2], 4, 5, [6, 7], [6, 7]];
+  const coords = [0, 1, 2, 3, 4, 5, 6];
+
+  const r = list3Possibilities(row, coords);
+  const e   = [ [ 1, 3, 2 ] ];
+
+  expect(r).toEqual(e);
+});
+
+export const list3Possibilities = (row, coords) => {
+  // filter out all the cells that have 2 digits as a possibility
+  const twoPossibilities = row.filter((r, i) => Array.isArray(r) && (r.length === 2 || r.length === 3) && coords.includes(i));
+
+  // keep the duplicates
+  // go through the upper right triangle (avoid extra unnecessary computation) matrix (formed by the two vectors)
+  return twoPossibilities.flatMap((x, i) => {
+    return twoPossibilities.map((y, j) => {
+      if (i > j && Sudoku.compareArray(x, y)) {
+        return x;
+      }
+
+      return null;
+    });
+  })
+  .filter(_ => _ !== null);
+}
+
+test('substractArrayFromArray', () => {
   const s = [[3, 7], [9,8]];
   const a = [1, 3, 7];
   

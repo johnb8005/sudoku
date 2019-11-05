@@ -205,8 +205,9 @@ test('sudoku.gamne - medium', () => {
   null, 6, null, null, null, 2, null, null, null
   ];
   const t = Sudoku.solveWithInit(s, 3, 10);
-
-  console.log(t)
+  const dim = 3
+  const cutoff = 3
+  console.log(Sudoku.printSudoku(t, dim, cutoff));
 
   //expect(t).toEqual(s);
 })
@@ -227,7 +228,7 @@ test('sudoku.game - hard', () => {
 
   const t = Sudoku.solveWithInit(s, 3, 10);
 
-  console.log(t)
+  console.log(Sudoku.printSudoku(t));
 
   //expect(t).toEqual(s);
 })
