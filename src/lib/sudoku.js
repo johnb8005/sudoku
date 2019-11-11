@@ -1,4 +1,3 @@
-import "core-js/features/array/flat-map";
 
 // sudoku solver
 // the sudoku board is linearized in a simple array[Option[Int]]
@@ -152,7 +151,9 @@ export const substractArrayFromArray = (a, ss) => {
     return a;
   }
 
-  return substractArray(a, ss.flat());
+  const mergedSs = [].concat.apply([], ss);
+
+  return substractArray(a, mergedSs);
 }
 
 /**
