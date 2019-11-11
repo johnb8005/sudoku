@@ -1,3 +1,5 @@
+import "core-js/features/array/flat-map";
+
 // sudoku solver
 // the sudoku board is linearized in a simple array[Option[Int]]
 // there is a solution set array that contain all possible combination: array[array[Int]]
