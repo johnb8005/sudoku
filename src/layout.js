@@ -23,7 +23,9 @@ export default (props) => {
     <main role="main">
       <div className="container">
         {props.children}
+        <div><br/><a href="https://johnb8005.github.io/sudoku/">&lt;&lt; Back to Github page</a></div>
       </div>
+
     </main>
   </React.Fragment>);
 }
