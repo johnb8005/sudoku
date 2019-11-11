@@ -1,5 +1,5 @@
 {
-  "name": "sudoku",
+  "name": "@johnb8005/sudoku",
   "version": "1.0.1",
   "dependencies": {
     "@babel/runtime": "^7.5.5",
@@ -12,8 +12,8 @@
     "test": "jest",
     "buildpackage": "babel src/lib/ --out-dir dist/;rm dist/*.test.js"
   },
+  "main": "dist/index.js",
   "files": [
-    "index.js",
     "dist/*"
   ],
   "devDependencies": {
