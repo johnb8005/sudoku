@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/sudoku/build/static/js/main.48c562be.chunk.js",
-    "main.js.map": "/sudoku/build/static/js/main.48c562be.chunk.js.map",
-    "runtime-main.js": "/sudoku/build/static/js/runtime-main.2dbd3afb.js",
-    "runtime-main.js.map": "/sudoku/build/static/js/runtime-main.2dbd3afb.js.map",
-    "static/js/2.6e328876.chunk.js": "/sudoku/build/static/js/2.6e328876.chunk.js",
-    "static/js/2.6e328876.chunk.js.map": "/sudoku/build/static/js/2.6e328876.chunk.js.map",
+    "main.js": "/sudoku/build/static/js/main.2ebc1b4a.chunk.js",
+    "main.js.map": "/sudoku/build/static/js/main.2ebc1b4a.chunk.js.map",
+    "runtime-main.js": "/sudoku/build/static/js/runtime-main.09070217.js",
+    "runtime-main.js.map": "/sudoku/build/static/js/runtime-main.09070217.js.map",
+    "static/js/2.8a01b52e.chunk.js": "/sudoku/build/static/js/2.8a01b52e.chunk.js",
+    "static/js/2.8a01b52e.chunk.js.map": "/sudoku/build/static/js/2.8a01b52e.chunk.js.map",
     "index.html": "/sudoku/build/index.html",
-    "precache-manifest.23c109b1d9509fcf7848d7c4a5bf863f.js": "/sudoku/build/precache-manifest.23c109b1d9509fcf7848d7c4a5bf863f.js",
+    "precache-manifest.297cc17c181cc865f6fb92baa51c8360.js": "/sudoku/build/precache-manifest.297cc17c181cc865f6fb92baa51c8360.js",
     "service-worker.js": "/sudoku/build/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.2dbd3afb.js",
-    "static/js/2.6e328876.chunk.js",
-    "static/js/main.48c562be.chunk.js"
+    "static/js/runtime-main.09070217.js",
+    "static/js/2.8a01b52e.chunk.js",
+    "static/js/main.2ebc1b4a.chunk.js"
   ]
 }
