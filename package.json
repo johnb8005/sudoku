@@ -2,6 +2,7 @@
   "name": "sudoku",
   "version": "1.0.0",
   "dependencies": {
+    "@babel/polyfill": "^7.7.0",
     "@babel/runtime": "^7.5.5",
     "core-js": "^3.4.0",
     "react-app-polyfill": "^1.0.4"
