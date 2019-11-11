@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/tabular-excel/build/static/js/main.be7190d9.chunk.js",
-    "main.js.map": "/tabular-excel/build/static/js/main.be7190d9.chunk.js.map",
-    "runtime-main.js": "/tabular-excel/build/static/js/runtime-main.b6fc80ef.js",
-    "runtime-main.js.map": "/tabular-excel/build/static/js/runtime-main.b6fc80ef.js.map",
-    "static/js/2.6e328876.chunk.js": "/tabular-excel/build/static/js/2.6e328876.chunk.js",
-    "static/js/2.6e328876.chunk.js.map": "/tabular-excel/build/static/js/2.6e328876.chunk.js.map",
-    "index.html": "/tabular-excel/build/index.html",
-    "precache-manifest.51fc0110c69a316da0a0353b942ef656.js": "/tabular-excel/build/precache-manifest.51fc0110c69a316da0a0353b942ef656.js",
-    "service-worker.js": "/tabular-excel/build/service-worker.js"
+    "main.js": "/sudoku/build/static/js/main.48c562be.chunk.js",
+    "main.js.map": "/sudoku/build/static/js/main.48c562be.chunk.js.map",
+    "runtime-main.js": "/sudoku/build/static/js/runtime-main.2dbd3afb.js",
+    "runtime-main.js.map": "/sudoku/build/static/js/runtime-main.2dbd3afb.js.map",
+    "static/js/2.6e328876.chunk.js": "/sudoku/build/static/js/2.6e328876.chunk.js",
+    "static/js/2.6e328876.chunk.js.map": "/sudoku/build/static/js/2.6e328876.chunk.js.map",
+    "index.html": "/sudoku/build/index.html",
+    "precache-manifest.57c33ec23533ca367a70b9b57eabf53b.js": "/sudoku/build/precache-manifest.57c33ec23533ca367a70b9b57eabf53b.js",
+    "service-worker.js": "/sudoku/build/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6fc80ef.js",
+    "static/js/runtime-main.2dbd3afb.js",
     "static/js/2.6e328876.chunk.js",
-    "static/js/main.be7190d9.chunk.js"
+    "static/js/main.48c562be.chunk.js"
   ]
 }
