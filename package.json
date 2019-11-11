@@ -2,7 +2,8 @@
   "name": "sudoku",
   "version": "1.0.0",
   "dependencies": {
-    "@babel/runtime": "^7.5.5"
+    "@babel/runtime": "^7.5.5",
+    "core-js": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
