@@ -8,7 +8,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "PUBLIC_URL=/tabular-excel/build react-scripts build",
-    "test": "react-scripts test",
+    "test2": "react-scripts test",
+    "test": "jest",
     "buildpackage": "babel src/lib/ --out-dir dist/;rm dist/*.test.js"
   },
   "files": [
