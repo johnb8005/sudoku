@@ -34,6 +34,14 @@ export default class SudokuLayout extends React.Component {
   onChange = (k, v) => {
     const x = v.target.value;
 
+    if(x ==='') {
+      const { s } = this.state;
+
+      s[k] = Number(x);
+
+      this.setState(s);
+    }
+
     if (Number(x) && x > 0) {
       const { s } = this.state;
 
@@ -59,7 +67,7 @@ export default class SudokuLayout extends React.Component {
         <tbody>
           {createArraySeqInt().map(i => <tr key={i} style={i%3 === 2 ? {borderBottom: 'solid medium'} : {}}>{createArraySeqInt().map(j => {
             const k = i*9 + j;
-            const v = Number(s[k]) && s[k] > 0 ? s[k]: '';
+            const v = Number(s[k]) && s[k] > 0 ? s[k] : '';
             return (<td key={j + '-' + i} style={j%3 === 2 ? {...styleTd, borderRight: 'solid medium'} : styleTd}>
               <input type="text" step="false" onChange={(x) => this.onChange(k, x)} value={v} style={{width: '100%', 'MozAppearance': 'textfield', border: 0}}/>
             </td>);
