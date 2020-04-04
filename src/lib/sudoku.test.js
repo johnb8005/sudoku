@@ -64,8 +64,15 @@ test('get col coords', () => {
   expect(Sudoku.getColCoords(0, dim)).toEqual([0, 4, 8, 12]);
   expect(Sudoku.getColCoords(1, dim)).toEqual([1, 5, 9, 13]);
   // 3 dim
-  expect(Sudoku.getColCoords(0)).toEqual([0, 9, 18, 27, 36, 45, 54, 63, 72]);
+  expect(Sudoku.getColCoords(0)).toEqual([0,  9, 18, 27, 36, 45, 54, 63, 72]);
   expect(Sudoku.getColCoords(1)).toEqual([1, 10, 19, 28, 37, 46, 55, 64, 73]);
+  expect(Sudoku.getColCoords(2)).toEqual([2, 11, 20, 29, 38, 47, 56, 65, 74]);
+  expect(Sudoku.getColCoords(3)).toEqual([3, 12, 21, 30, 39, 48, 57, 66, 75]);
+  expect(Sudoku.getColCoords(4)).toEqual([4, 13, 22, 31, 40, 49, 58, 67, 76]);
+  expect(Sudoku.getColCoords(5)).toEqual([5, 14, 23, 32, 41, 50, 59, 68, 77]);
+  expect(Sudoku.getColCoords(6)).toEqual([6, 15, 24, 33, 42, 51, 60, 69, 78]);
+  expect(Sudoku.getColCoords(7)).toEqual([7, 16, 25, 34, 43, 52, 61, 70, 79]);
+  expect(Sudoku.getColCoords(8)).toEqual([8, 17, 26, 35, 44, 53, 62, 71, 80]);
 })
 
 test('get cell coords', () => {

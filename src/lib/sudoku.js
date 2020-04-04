@@ -32,14 +32,14 @@ export const initSolset = (sudoku, dim = 3) => {
  * @param  i: row index (starts at 1)
  * @return e.g. [1, 2, 3, ...]
  */
-export const getRowCoords = (i, dim = 3) => Array(dim * dim).fill(0).map((x, k) =>  i*dim*dim + k);
+export const getRowCoords = (i, dim = 3) => Array(dim * dim).fill(0).map((x, k) => i*dim*dim + k);
 
 /**
  * get the list of coordinates for a column
  * @param  i: row index (starts at 1)
  * @return e.g. [1, 9, 18, ...]
  */
-export const getColCoords = (i, dim = 3) => Array(dim * dim).fill(0).map((x, k) =>  i + dim*dim*k);
+export const getColCoords = (i, dim = 3) => Array(dim * dim).fill(0).map((x, k) => i + dim*dim*k);
 
 /**
  * get the list of coordinates for a cell of cells (in regular sudoku, 3x3 cells)
