@@ -1,3 +1,5 @@
+## deprecated, see https://github.com/johnb8005/sudoku-ts
+
 # Sudoku solver
 
 [![CircleCI](https://circleci.com/gh/johnb8005/sudoku.svg?style=svg)](https://circleci.com/gh/johnb8005/sudoku)
